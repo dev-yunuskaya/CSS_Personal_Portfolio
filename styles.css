@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Cutive mono", sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#welcome-section p {
+    font-size: 1.4rem;
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: lightblue;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 10px;
+    min-height: 20px;
+    z-index: 1;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    background-color: rgb(103, 166, 163);
+}
+
+.project-tile {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+
+img:hover {
+    transform: scale(1.01);
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#welcome-section{
+    height: 100vh;
+    background-color: rgb(103, 166, 163);
+}
+
+#projects {
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(140, 195, 222), rgb(22, 49, 70));
+    padding: 20px 0;
+}
+
+#contacts {
+    padding: 0 5px;
+    height: 95vh;
+    background-color: rgb(103, 166, 163);
+}
+
+#contacts h1 {
+    margin-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 10px;
+    height: 5vh;
+    background-color: rgb(116, 130, 131);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 1000px) {
+    .project-tile {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+
+    #projects {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: linear-gradient(135deg, rgb(140, 195, 222), rgb(22, 49, 70));
+        color: white;
+        padding: 30px 10px;
+        box-sizing: border-box;
+    }
+}
